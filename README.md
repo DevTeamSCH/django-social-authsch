@@ -11,6 +11,7 @@ Quick start
     ````python
     INSTALLED_APPS = [
         ...
+        'social_django',
         'authsch',
     ]
     ````
@@ -19,12 +20,12 @@ Quick start
 
     ````python
     SOCIAL_AUTH_URL_NAMESPACE = 'social'
-    
+
     AUTHENTICATION_BACKENDS = [
         'authsch.authentication.AuthSCHOAuth2',
         'django.contrib.auth.backends.ModelBackend',
     ]
-    
+
     SOCIAL_AUTH_AUTHSCH_KEY = "key"
     SOCIAL_AUTH_AUTHSCH_SECRET = "secret"
     SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
