@@ -1,4 +1,3 @@
-=====
 django-authsch
 =====
 
@@ -7,18 +6,18 @@ Django Application for AuthSCH
 Quick start
 -----------
 
-````python
 1. Add "authsch" to your INSTALLED_APPS setting like this::
 
+    ````python
     INSTALLED_APPS = [
         ...
         'authsch',
     ]
-````
+    ````
 
 2. settings.py
 
-````python
+    ````python
     SOCIAL_AUTH_URL_NAMESPACE = 'social'
     
     AUTHENTICATION_BACKENDS = [
@@ -30,6 +29,6 @@ Quick start
     SOCIAL_AUTH_AUTHSCH_SECRET = "secret"
     SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/'
     LOGIN_URL = "login/authsch/"
-````
+    ````
 
 3. Run `python manage.py migrate` to create the authsch models.
